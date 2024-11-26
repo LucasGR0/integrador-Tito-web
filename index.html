@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Tienda de Zapatillas</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <img src="/asets/download-removebg-preview.png" alt="Logo" class="logo">
+            <h1>Urban Sneakers</h1>
+        </div>
+        <div class="acciones">
+            <a href="/html/login.html" class="boton">Iniciar sesión</a>
+            <a href="/html/404.html" class="boton">Crear cuenta</a>
+            <a href="/html/404.html" class="carrito">🛒</a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <div class="menu-hamburguesa">
+            <span>☰</span>
+        </div>
+        <nav class="menu-movil">
+            <a href="/html/login.html" class="boton">Iniciar sesión</a>
+            <a href="/html/404.html" class="boton">Crear cuenta</a>
+            <a href="/html/404.html" class="carrito">🛒</a>
+        </nav>
+    </header>
+    
+    <section class="menu-filtro">
+        <a href="/html/404.html" class="categoria">Hombre</a>
+        <a href="/html/404.html" class="categoria">Mujer</a>
+        <a href="/html/404.html" class="categoria">Oferta</a>
+    </section>
+
+    <section class="promo">
+        <h2>Productos</h2>
+    </section>
+
+    <!-- Contenedor donde se cargarán los productos -->
+    <section class="productos">
+        <div id="productos-grid" class="cuadricula-productos">
+            <!-- Los productos se insertarán aquí mediante JavaScript -->
+        </div>
+    </section>
+
+    <div class="boton-home-container">
+        <a href="./html/home.html" class="boton-home">Home</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Tienda de Zapatillas Urbanas. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://web.whatsapp.com/" class="wasap-flotante" target="_blank" rel="noopener noreferrer">
+                <img src="../asets/wasap.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../asets/facebo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../asets/intrag.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer">
+                <img src="./asets/x.png"alt="X">
+            </a>
+        </div>
+        <div class="preguntas-frecuentes">
+            <a href="./html/preguntasFrecu.html" class="boton-preguntas">Preguntas frecuentes</a>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="./js/cargaDeProducto.js"></script>
+    <script src="./js/java.js"></script>
+</body>
+
+</html>

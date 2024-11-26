@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #005099; /* Fondo azul */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial Black, sans-serif; /* Fuente Arial Black */
+}
+
+.titulo {
+    color: black; /* Título en negro */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenedor {
+    background-color: #ffffff; /* Fondo blanco del cuadro */
+    padding: 40px 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elevado */
+    width: 350px; /* Ajuste del ancho */
+}
+
+/* Estilo del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #cccccc; /* Borde ligero */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+/* Estilo del icono */
+.icono {
+    font-size: 1.5em;
+    color: #333333; /* Color gris oscuro */
+    margin-right: 10px;
+}
+
+/* Estilo de los campos de texto */
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1em;
+    background: transparent; /* Sin fondo adicional */
+    color: #333333; /* Texto gris oscuro */
+}
+
+/* Estilo del botón */
+input[type="submit"] {
+    background-color: #005099; /* Fondo azul oscuro */
+    color: white; /* Texto en blanco */
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s; /* Animación para el hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #003d7a; /* Efecto hover más oscuro */
+}
+
+/* Estilo del mensaje de error */
+.mensaje-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px; /* Ajuste del espaciado */
+    margin-bottom: 20px;
+    text-align: center;
+    display: none; /* Oculta inicialmente */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    .contenedor {
+        width: 90%; /* Más ancho en pantallas pequeñas */
+        padding: 30px 20px;
+    }
+
+    .titulo {
+        font-size: 1.8em;
+    }
+}

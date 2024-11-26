@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href="../css/login.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <h1 class="titulo">Inicio de Sesión</h1> <!-- Título encima del cuadro -->
+    <div class="contenedor">
+        <form id="login-form" class="formulario"> <!-- ID agregado al formulario -->
+            <div class="campo">
+                <span class="icono">👤</span>
+                <input type="text" id="usuario" placeholder="usuario"> <!-- ID agregado -->
+            </div>
+            <div class="campo">
+                <span class="icono">🔒</span>
+                <input type="password" id="contrasena" placeholder="contraseña"> <!-- ID agregado -->
+            </div>
+            <p id="mensaje-error" class="mensaje-error"></p> <!-- Mensaje de error -->
+            <input type="submit" value="Siguiente"> <!-- Botón debajo de los campos -->
+        </form>
+    </div>
+
+    <script src="../js/login.js"></script> <!-- Enlace al archivo JS -->
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-actions .btn-action {
+    background-color: white;
+    color: #004080;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.user-actions .btn-action:hover {
+    background-color: #e0e0e0;
+}
+
+.user-actions .btn-cart {
+    padding: 5px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Product container */
+.product-container {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Permite que los productos se acomoden en filas */
+}
+
+.product-image img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor en pantallas pequeñas */
+    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    min-width: 250px; /* Esto evita que la sección de detalles se colapse demasiado */
+}
+
+.product-details h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+select,
+.gender-selection input[type="radio"] {
+    margin-right: 10px;
+}
+
+.gender-selection label {
+    margin-right: 15px;
+}
+
+.btn-add-cart {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-add-cart:hover {
+    background-color: #002e5c;
+}
+
+.product-description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .footer-content {
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Alinea los elementos en columna */
+        align-items: flex-start;
+    }
+
+    .product-container {
+        flex-direction: column; /* Los productos se apilan en dispositivos más pequeños */
+        gap: 20px;
+    }
+
+    .product-image img {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    }
+
+    .product-details h2 {
+        font-size: 24px; /* Ajuste del tamaño del título */
+    }
+
+    .price {
+        font-size: 20px; /* Ajuste del tamaño del precio */
+    }
+
+    .btn-add-cart {
+        font-size: 14px; /* Tamaño de fuente más pequeño para botones */
+    }
+
+    footer {
+        padding: 10px; /* Menos padding en el pie de página */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px; /* Menos padding en el header para pantallas pequeñas */
+    }
+
+    .navbar {
+        flex-direction: column; /* Alinea el navbar en columna */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Alinea los enlaces del navbar en columna */
+        gap: 10px;
+    }
+
+    .brand {
+        font-size: 20px; /* Reduce el tamaño del nombre de la marca */
+    }
+
+    .product-container {
+        padding: 15px;
+    }
+
+    .product-details h2 {
+        font-size: 22px;
+    }
+
+    .product-image img {
+        max-width: 90%; /* Las imágenes serán más pequeñas en pantallas muy pequeñas */
+    }
+
+    .price {
+        font-size: 18px; /* Precio más pequeño */
+    }
+
+    .btn-add-cart {
+        font-size: 14px;
+        padding: 8px 16px; /* Botón más pequeño */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

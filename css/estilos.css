@@ -1,0 +1,293 @@
+/* Estilos generales */
+body {
+    background-image: url(../asets/Imagen\ de\ fondo.webp);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    position: relative; /* Permite mover el elemento respecto a su posición normal */
+    top: -40px; /* Mueve el elemento 10px hacia arriba */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #0056b3;
+    color: white;
+    height: 50px; 
+    padding: 5px 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.acciones .boton, .acciones .carrito {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: #004a9f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carrito {
+    font-size: 20px;
+}
+
+/* Estilos para los botones de filtro */
+.menu-filtro {
+    background-color: #0056b3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.categoria:hover {
+    background-color: #eee;
+    border-color: #999;
+}
+
+/* Estilos para los productos */
+.promo {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px auto;
+    width: 320px;
+}
+
+.promo h2 {
+    font-size: 28px;
+    margin: 0;
+    color: black;
+}
+
+/* Cuadrícula de productos centrada */
+.cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.3s ease;
+    margin: 15px;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.boton-comprar {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #003d85;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el ícono de WhatsApp flotante */
+.wasap-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 1px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s ease;
+}
+
+.wasap-flotante img {
+    width: 80px; /* Icono más grande */
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de agrandamiento gradual al pasar el mouse */
+.wasap-flotante:hover img {
+    transform: scale(1.3) rotate(10deg); /* Agrandamiento y ligera rotación */
+}
+
+
+/* Estilos para el botón de Preguntas Frecuentes */
+.preguntas-frecuentes {
+    margin-top: 10px;
+}
+
+.boton-preguntas {
+    color: white;
+    text-decoration: none;
+    background-color: #004a9f;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-preguntas:hover {
+    background-color: #003d85;
+}
+
+/* Estilos para el botón Home */
+.boton-home-container {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.boton-home {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-home:hover {
+    background-color: #003d85;
+}
+
+/* Ajustes del logo (más pequeño) */
+.logo {
+    position: relative;
+    height: 80px;
+    top: 100px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el menú hamburguesa en móviles */
+.menu-hamburguesa {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+/* Ocultar el menú móvil por defecto */
+.menu-movil {
+    display: none;
+    flex-direction: column;
+    background-color: #0056b3;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.menu-movil a {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .acciones {
+        display: none;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        position: relative;
+        margin-top: 0;
+    }
+
+    .menu-filtro {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajustes para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .logo {
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: 1fr;
+    }
+}
